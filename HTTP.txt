@@ -1,0 +1,37 @@
+HTTP 200 (OK)
+HTTP 200 durum kodu, yanıtın başarılı olduğunu gösterir.
+Yani, istemci ile sunucu arasındaki iletişim herhangi bir hata olmadan sorunsuz bir şekilde yürütülmüştür.
+
+HTTP 201 (Created)
+Bu, talebin sadece başarılı olmadığını, aynı zamanda bir kaynağın da yaratıldığını gösterir.
+Bu durum kodu, sunucuya gönderilen kaynağı tanımladığı için genellikle bir POST isteğiyle birlikte gelir.
+
+HTTP 301 (Moved Permanently)
+Burada, kaynağa yapılacak tüm gelecekteki istekler belirli bir URL'ye yönlendirilmelidir. 
+Artık var olmayan bir sayfadan yönlendirme yapmak için kullanılabilir. 
+Ancak bu isteğin yalnızca GET veya HEAD yöntemleri için kullanılması önerilir, çünkü bazı hatalar içerir ve tüm kullanıcı aracıları onunla uyumlu değildir. 
+Bu tür bir yanıt varsayılan olarak önbelleğe alınabilir.
+
+HTTP 400 (Bad Request)
+Bu, alınan isteğin yanlış söz diziminden kaynaklanabilecek bir hata nedeniyle sunucu tarafından işlenemediğini gösterir. 
+Sunucu, bir sonraki talep alındığında bazı değişikliklerin yapılmasını bekler, aksi takdirde aynı hata devam eder.
+
+HTTP 401 (Unauthorized)
+Bu durumda, alınan bir yanıta erişim sağlamak için yetkilendirme gerekir. 
+Bu HTTP durum kodu HTTP 403'e benzer. 
+Ancak burada, talebin kabul edilebilmesi için geçerli kimlik bilgilerine sahip olması beklenir.
+
+HTTP 403 (Forbidden)
+Bu HTTP durum kodu, kullanıcı-istemcinin geçerli bir veriye sahip olduğu ancak sunucu tarafından erişimin reddedildiği anlamına gelir. 
+Kullanıcının söz konusu kaynak üzerinde herhangi bir hakka sahip olmasına izin verilmediğinden, tekrarlanan girişimlerde bulunmak kullanıcı olarak başarılı bir yanıt vermeyecektir.
+HTTP 404 (Not Found)
+Bu HTTP kodu, istenen kaynağın sunucu tarafından bulunamayacağı anlamına gelir. 
+Bu, geçici bir aksaklıktan kaynaklanıyor olabilir ve gelecekte başka bir istekte bulunulursa kaynak kullanılabilir olabilir. 
+Çoğunlukla, 404'e götüren bağlantılara genellikle bozuk bağlantılar denir.
+
+HTTP 500 (Internal Server Error)
+Burada, belirli bir isteğin, isteği tamamlayamamasına neden olan beklenmedik bir durumla karşılaştığı anlamına gelir. 
+Kullanıcının bu HTTP durum kodunu web sayfasında görmesi beklenmez.
+
+HTTP 502 (Bad Gateway)
+Bu HTTP kodu, sunucunun proxy olarak hareket ederken istekte bulunurken sunucudan geçersiz bir yanıt aldığını gösterir.
